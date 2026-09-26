@@ -68,14 +68,14 @@ body {
       vertical-align: middle;
       color: var(--digit);
    }
-    #board tr:nth-child(3n){
+    #board tr:nth-child(3n) td{
       border-bottom: 3px solid var(--block-line);
        color: var(--digit);
    }
 
    #board td:nth-child(3n){
       border-right: 3px solid var(--block-line);
-       color: var(--digit);
+      color: var(--digit);
    }
 
    #board td:hover{
@@ -86,7 +86,6 @@ body {
    #board td.user-input{
       color:var(--color-user-input);
       font-style:italic;
-       color: var(--digit);
    }
 
    #board td.error{
@@ -123,18 +122,21 @@ body {
 /* TODO: comfortable padding; left-aligned headings; an underline under
    the header row of .scores. */
 
-   .score{
+   .scores{
       margin-left:auto;
       margin-right:auto;
    }
 
-.score td{
-   padding:5px;
-   text-align:left;
-}
+   .scores td{
+      padding:5px;
+      text-align:left;
+   }
 
-.score th{
-   text-decoration: underline;
+   .scores th{
+      text-decoration: underline;
+   }
 
-}
+   .scores thead tr{
+      border-bottom: 2px solid var(--board-line);
+   }
 
