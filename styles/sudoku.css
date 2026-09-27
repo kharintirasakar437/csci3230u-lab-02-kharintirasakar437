@@ -61,7 +61,7 @@ body {
       margin-right:auto;
    }
    #board td{
-      border: 2px solid var(--board-line);
+      border: 1px solid var(--board-line);
       text-align: center;
       width:40px;
       height:40px;
@@ -125,6 +125,7 @@ body {
    .scores{
       margin-left:auto;
       margin-right:auto;
+      border-collapse:collapse;
    }
 
    .scores td{
@@ -133,10 +134,11 @@ body {
    }
 
    .scores th{
-      text-decoration: underline;
+      padding:5px;
+      text-align:left;
    }
 
    .scores thead tr{
-      border-bottom: 2px solid var(--board-line);
+      border-bottom: 2px solid var(--block-line);
    }
 
